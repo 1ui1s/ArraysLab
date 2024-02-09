@@ -11,10 +11,12 @@ public class ArrayLab {
      * @param args command line parameters
      */
     public static void main(String[] args) {
-        int[][] spreadsheet = new int[][] { {1,2,3}, {4,5,6}, {7,8,9} };
+        int[][] spreadsheet = new int[][] { {1,2,3},
+                                            {4,5,6},
+                                            {7,8,9} };
         System.out.println("Max: " + max(spreadsheet));
-        /*
         System.out.println("Sum of row 0: " + rowSum(spreadsheet,0));
+        /*
         System.out.println("Sum of col 0: " + columnSum(spreadsheet,0));
         int[] rowSums = allRowSums(spreadsheet);
         for(int row = 0; row < rowSums.length; row++) {
@@ -50,7 +52,13 @@ public class ArrayLab {
      * @return the sum of the elements in Row x of a
      */
     public static int rowSum(int[][] a, int x) {
-        return 0;
+        int sum = 0;
+
+        for (int i = 0; i < a.length; i++)
+        {
+            sum += a[x][i];
+        }
+        return sum;
     }
 
     /**
