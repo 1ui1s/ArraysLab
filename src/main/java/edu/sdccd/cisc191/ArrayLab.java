@@ -55,7 +55,7 @@ public class ArrayLab {
     public static int rowSum(int[][] a, int x) {
         int sum = 0;
 
-        for (int i = 0; i < a.length; i++)
+        for (int i = 0; i < a[x].length; i++)
         {
             sum += a[x][i];
         }

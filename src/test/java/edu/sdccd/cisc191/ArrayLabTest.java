@@ -20,7 +20,10 @@ public class ArrayLabTest {
     public void setUp() {
         basic = new int[][] { {1,2,3}, {4,5,6}, {7,8,9} };
         allneg = new int[][] { {-10,-12,-3}, {-4,-5,-6,-8}, {-7,-8} }; //all neg and ragged
-        nonsquare = new int[][] { {1,2,3}, {4,5}, {6,7,8,9} };
+        nonsquare = new int[][] {
+                {1,2,3},
+                {4,5},
+                {6,7,8,9} };
     }
 
     /**
