@@ -32,7 +32,7 @@ public class ArrayLab {
      * @return the maximum value in the 2d parameter array a
      */
     public static int max(int[][] a) {
-        int foundMax = -1000;
+        int foundMax = a[0][0];
         for (int i = 0; i < a.length; i++)
         {
             for (int j = 0; j < a[i].length; j++)
